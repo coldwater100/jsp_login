@@ -26,7 +26,7 @@
 <h1><%= "Home of Coldwater100" %></h1>
 <br/>
 
-<form action="${pageContext.request.contextPath}/login_process.jsp" method="post">
+<form action="login_process.jsp" method="post">
   <table>
     <tr>
       <td class="td_legend">Id </td>
