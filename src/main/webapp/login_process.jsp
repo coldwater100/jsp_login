@@ -18,7 +18,6 @@
 
 </style>
 <body>
-    뭘 봐
     <%
         String id = request.getParameter("id");
         String pwd = request.getParameter("password");

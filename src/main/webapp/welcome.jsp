@@ -14,16 +14,23 @@
     h1{
         color: aqua;
     }
+    a{
+        text-decoration: none;
+        font-size: 30px;
+    }
 </style>
 <body>
     <%
-        String id = session.getAttribute("chance_login_id").toString();
-        if(session.getAttribute("chance_login_id")==null){
+         if(session.getAttribute("chance_login_id")==null){
             response.sendRedirect("index.jsp");
-
+        } else {
+            String id = session.getAttribute("chance_login_id").toString();
+            out.println("<h1>" + id+"님 환영합니다.</h1>");
         }
-        out.println("<h1>" + id+"님 환영합니다.</h1>");
+
     %>
+
+    <a href="logout_process.jsp">logout</a>
 
 </body>
 </html>
