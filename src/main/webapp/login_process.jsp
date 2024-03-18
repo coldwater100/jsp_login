@@ -26,9 +26,7 @@
             response.sendRedirect("welcome.jsp");
 
         }else{
-//            out.println("회원가입부터 하세요");
-            response.sendRedirect("index.jsp/error=failtologin");
-
+            response.sendRedirect("index.jsp?error=failtologin");
         }
     %>
 
